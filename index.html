@@ -26,8 +26,11 @@
 
     map.setView([54.5,-3], 6);
 
-    map.on('click', function(e){
-        var position = e.latlng ;
+    map.on('dblclick', function(e){
+         var marker = new L.marker(e.latlng);
+         //dans bindPopup écrire du html
+         marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+         marker.addTo(map);
     });
 
     </script>
