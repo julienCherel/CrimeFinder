@@ -20,14 +20,14 @@
     <script>
     // ajoute la map au div "map"
     var map = L.map('map');
-    id='satellite-v9'
+    id='satellite-streets-v9'
     token='pk.eyJ1IjoianVsaWVuMTAxMCIsImEiOiJjajk5cHpkdjAxMHA1MzNuMm12aWd1OW5nIn0.DzPgmtGDquEzt1IyVb7yJQ'
     L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/'+id+'/tiles/{z}/{x}/{y}?access_token='+token).addTo(map); //marche
 
-    map.setView([47.15,4.47], 6);
+    map.setView([54.5,-3], 6);
 
     map.on('click', function(e){
-        alert(e.latlng)
+        var position = e.latlng ;
     });
 
     </script>
