@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Profil>
+<personne>
+    <nom>ELAZRI</nom>
+    <prenom>Mohamed Yassine</prenom>
+    <datenaissance>20/10/1994</datenaissance>
+    <adresse>
+        <ville>Montpellier</ville>
+        <pays>FRANCE</pays>
+    </adresse>
+    <contact>
+        <email>yassine.el10@gmail.com</email>
+        <Telephone>0626101112</Telephone>
+    </contact>
+</personne>
+
+<collègues>
+    <personne>
+        <nom>Samreth></nom>
+        <prenom>Darren</prenom>
+    </personne>
+    <personne>
+        <nom>Niaré</nom>
+        <prenom>Seydou</prenom>
+    </personne>
+    <personne>
+        <nom>Cherel</nom>
+        <prenom>Julien</prenom>
+    </personne>
+</collègues>
+</Profil>
+
