@@ -1,0 +1,33 @@
+{
+    "Profil": {
+        "personne": {
+            "nom": "ELAZRI",
+            "prenom": "Mohamed Yassine",
+            "datenaissance": "20/10/1994",
+            "adresse": {
+                "ville": "Montpellier",
+                "pays": "FRANCE"
+            },
+            "contact": {
+                "email": "yassine.el10@gmail.com",
+                "Telephone": "0626101112"
+            }
+        },
+        "collegues": {
+            "personne": [
+                {
+                    "nom": "Samreth>",
+                    "prenom": "Darren"
+                },
+                {
+                    "nom": "Niaré",
+                    "prenom": "Seydou"
+                },
+                {
+                    "nom": "Cherel",
+                    "prenom": "Julien"
+                }
+            ]
+        }
+    }
+}
