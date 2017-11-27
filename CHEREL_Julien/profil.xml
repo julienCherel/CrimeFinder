@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Profil>
+<personne>
+    <nom>CHEREL</nom>
+    <prenom>Julien</prenom>
+    <datenaissance>09/02/1996</datenaissance>
+    <adresse>
+        <ville>Boisseron</ville>
+        <pays>France</pays>
+    </adresse>
+    <contact>
+        <email>julien.cherel@etu.univ-montp3.fr</email>
+        <Telephone>0632199959</Telephone>
+    </contact>
+</personne>
+
+<collegues>
+    <personne>
+        <nom>Samreth></nom>
+        <prenom>Darren</prenom>
+    </personne>
+    <personne>
+        <nom>Niaré</nom>
+        <prenom>Seydou</prenom>
+    </personne>
+    <personne>
+        <nom>Elazri</nom>
+        <prenom>Yassine</prenom>
+    </personne>
+</collegues>
+</Profil>
+

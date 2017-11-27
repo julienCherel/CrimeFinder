@@ -1,0 +1,31 @@
+{
+    "Profil": {
+        "personne": {
+            "nom": "CHEREL",
+            "prenom": "Julien",
+            "datenaissance": "09/02/1996",
+            "adresse": {
+                "ville": "Boisseron",
+                "pays": "FRANCE"
+            },
+            "contact": {
+                "email": "julien.cherel@etu.univ-montp3.fr",
+                "Telephone": "0632199959"
+            }
+        },
+        "collegues": [
+            {
+                "nom": "Samreth>",
+                "prenom": "Darren"
+            },
+            {
+                "nom": "Niaré",
+                "prenom": "Seydou"
+            },
+            {
+                "nom": "Elazri",
+                "prenom": "Yassine"
+            } 
+        ]
+    }
+}
