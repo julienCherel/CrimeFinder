@@ -54,3 +54,17 @@ function crimeArray(lat, lng, date){
             throw new Error("Données non disponible pour cette date et cordonnées");
         }
     })}
+
+
+    function StreetLevelCrimeByLatLng(lat,lng,date){
+    fetch("https://data.police.uk/api/crimes-street/all-crime?lat="+lat+"&lng="+lng+"&date="+date).then(
+        function(response){
+            response.json().then(function(d){
+                p = document.getElementById('crime');
+                console.log(d[0].category);
+                p.innerHTML = d[0].category;
+                }
+            )
+        }
+        )
+}

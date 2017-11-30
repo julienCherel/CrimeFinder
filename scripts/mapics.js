@@ -15,3 +15,13 @@
         document.getElementById("long").value=e.latlng.lng;
         marker = new L.marker(e.latlng).addTo(map);        
    });
+
+
+    document.getElementById("ok").onclick=function(e){
+        var lat = document.getElementById("lat").value;
+        var lng = document.getElementById("long").value;
+        var temp = document.getElementById("date").value
+        var t = temp.split("-");
+        var date = t[0]+"-"+t[1];
+        StreetLevelCrimeByLatLng(lat,lng,date)       
+   };

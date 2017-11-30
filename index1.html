@@ -22,16 +22,22 @@
     	Latitude : <input id ="lat" type="text" disabled="true">
     	Longitude : <input id="long" type="text" disabled="true"><br><br>
 
-    	Date : <input type="date" name="bday" min="2014-10-29" max="2017-09-29">
+    	Date : <input type="date" id="date" min="2014-10-29" max="2017-09-29">
 		<button id="ok" type="submit">Chercher</button>
+
+		<p id="crime"></p>
 		
     </div>
     <div id="liste_id">
     </div>
     <script src=scripts/mapics.js></script>
+<<<<<<< Updated upstream
     <script src="scripts/crimeArray.js"></script>
     <script>
       crimeArray(document.getElementById('lat'),document.getElementById('long'), document.getElementById('date'));
     </script>
+=======
+    <script src=scripts/crimeArray.js></script>
+>>>>>>> Stashed changes
 </body>
 </html>
