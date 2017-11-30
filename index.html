@@ -1,27 +1,126 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset=utf-8 />
-<title>Swipe between layers</title>
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js'></script>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<html lang="en">
 
+  <head>
 
-<style>
-  body { margin:0; padding:0; }
-  #map { position:absolute; top:0; bottom:0; width:50%; }
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-</head>
+    <title>Mapics</title>
 
-<body>
-    <div id=search>
-      <input type="date" name="begin-date">
-      <input type="date" name="end-date">
-      <input type="select" name="">
+    <!-- Bootstrap core CSS -->
+    <link href="mapic/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/mapic-item.css" rel="stylesheet">
+
+    <!-- javascript link -->
+    <script src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js'></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a onclick="reload_page()" class="navbar-brand">Mapics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-3">
+          <h1 class="my-4">Seach</h1>
+          <div class="list-group">
+            <a href="#" class="list-group-item active">search 1</a>
+            <a href="#" class="list-group-item">search 2</a>
+            <a href="#" class="list-group-item">search 3</a>
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
+        <div class="col-lg-9">
+
+          <div class="card mt-4">
+            <div id='map'></div>
+
+          </div>
+          <div class="card-body">
+            <p>bonjour tout le monde </p>
+          </div>
+
+          <!-- /.card -->
+          
+          <!-- /.card -->
+
+        </div>
+        <!-- /.col-lg-9 -->
+
+      </div>
+
     </div>
-    <div id='map'></div>
-    <script src=mapics.js></script>
-</body>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Mapics 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="mapic/jquery/jquery.min.js"></script>
+    <script src="mapic/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // ajoute la map au div "map"
+      var map = L.map('map');
+      id='satellite-streets-v9'
+      token='pk.eyJ1IjoianVsaWVuMTAxMCIsImEiOiJjajk5cHpkdjAxMHA1MzNuMm12aWd1OW5nIn0.DzPgmtGDquEzt1IyVb7yJQ'
+      L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/'+id+'/tiles/{z}/{x}/{y}?access_token='+token).addTo(map);
+
+      map.setView([54.5,-3], 6);
+
+      map.on('dblclick', function(e){
+           var marker = new L.marker([54.6357, -6.48193]);
+           marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup(); //dans bindPopup mettre le texte de l'infoBulle en html
+           marker.addTo(map);
+      });
+
+      function reload_page(){
+          location.reload();
+      }
+
+    </script>
+
+  </body>
+
 </html>
