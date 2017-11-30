@@ -30,6 +30,8 @@ function crimeArray(lat, lng, date){
             response.json().then(function(data){
                 var crimeArray = [];
                 var total = 0;
+                var tmp='';
+                var list = document.getElementById('liste_id');
                 for(c=0;c<categories.length-1;c++){
                     var count = 0;
                     for(i=0;i<data.length;i++){
@@ -40,8 +42,13 @@ function crimeArray(lat, lng, date){
                     }
                     crimeArray.push([categories[c][1],count]);
                 }
+                for (var i = 0; i < crimeArray.length; i++) {
+
+                    tmp+='<a href="#">'+crimeArray[i]+'</a>';
+                }
                 crimeArray.push(["Total",total]);
                 console.log(crimeArray);
+                list.innerHTML=tmp;
             })
         } else {
             throw new Error("Données non disponible pour cette date et cordonnées");
