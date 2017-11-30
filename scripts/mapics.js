@@ -23,5 +23,5 @@
         var temp = document.getElementById("date").value
         var t = temp.split("-");
         var date = t[0]+"-"+t[1];
-        StreetLevelCrimeByLatLng(lat,lng,date)       
+         crimeArray(lat,lng,date);     
    };
