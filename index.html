@@ -57,31 +57,42 @@
 
       <div class="row">
 
-        <div class="col-lg-3">
-          <h1 class="my-4">Seach</h1>
-          <div class="list-group">
-            <a href="#" class="list-group-item active">search 1</a>
-            <a href="#" class="list-group-item">search 2</a>
-            <a href="#" class="list-group-item">search 3</a>
-          </div>
-        </div>
-        <!-- /.col-lg-3 -->
-
+        <!-- Map -->
         <div class="col-lg-9">
-
+         
           <div class="card mt-4">
             <div id='map'></div>
 
           </div>
+
           <div class="card-body">
             <p>bonjour tout le monde </p>
           </div>
 
           <!-- /.card -->
-          
+           
           <!-- /.card -->
 
         </div>
+        <!-- Map -->
+
+        <div class="col-lg-3">
+          <div class="form-group">
+            <select class="form-control" id="sel1">
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+            </select>
+          </div>
+          <div id = "tab_cat" class="list-group">
+            
+          </div>
+        </div>
+        <!-- /.col-lg-3 -->
+
         <!-- /.col-lg-9 -->
 
       </div>
@@ -100,7 +111,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="mapic/jquery/jquery.min.js"></script>
     <script src="mapic/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/crimeArray.js"></script>
     <script>
+      crimeArray('52.629729','-1.131592', '2017-01')
     // ajoute la map au div "map"
       var map = L.map('map');
       id='satellite-streets-v9'

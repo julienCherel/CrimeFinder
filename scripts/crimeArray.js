@@ -30,6 +30,7 @@ function crimeArray(lat, lng, date){
             response.json().then(function(data){
                 var crimeArray = [];
                 var total = 0;
+                var tab=document.getElementById('tab_cat');
                 for(c=0;c<categories.length-1;c++){
                     var count = 0;
                     for(i=0;i<data.length;i++){
@@ -41,6 +42,12 @@ function crimeArray(lat, lng, date){
                     crimeArray.push([categories[c][1],count]);
                 }
                 crimeArray.push(["Total",total]);
+                var txt='<a href="#" class="list-group-item ">';
+                for (var i = 0; i < crimeArray.length; i++) {
+                    txt+='<a href="#" class="list-group-item ">'
+                    txt +=  crimeArray[i]+'</a>';
+                }
+                tab.innerHTML=txt;
                 console.log(crimeArray);
             })
         } else {
