@@ -48,9 +48,19 @@ function crimeArray(lat, lng, date){
                 }
                 crimeArray.push(["Total",total]);
                 console.log(crimeArray);
-                list.innerHTML=tmp;
+                document.getElementById("crime").innerHTML = "";
+                if(total == 0){
+                    document.getElementById("crime").innerHTML = "Données non disponible pour cette date et cordonnées";
+                    list.innerHTML = "";
+                } else{
+                    list.innerHTML=tmp;
+                }
             })
         } else {
+            console.log(date)
+            if (date == '-undefined') {
+                document.getElementById("crime").innerHTML = "Veuillez selectionner une date";
+            }
             throw new Error("Données non disponible pour cette date et cordonnées");
         }
     })}
