@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<profil>
+<personne>
+    <nom>Samreth</nom>
+    <prenom>Darren</prenom>
+    <datenaissance>28/01/1996</datenaissance>
+    <adresse>
+        <ville>Saint-Georges-d'Orques</ville>
+        <pays>France</pays>
+    </adresse>
+    <contact>
+        <email>darren.samreth@etu.univ-montp3.fr</email>
+        <telephone>06 18 97 88 01</telephone>
+    </contact>
+</personne>
+
+<collegues>
+    <personne>
+        <nom>Cherel></nom>
+        <prenom>Julien</prenom>
+    </personne>
+    <personne>
+        <nom>Niaré</nom>
+        <prenom>Seydou</prenom>
+    </personne>
+    <personne>
+        <nom>Elazri</nom>
+        <prenom>Yassine</prenom>
+    </personne>
+</collegues>
+</profil>
+

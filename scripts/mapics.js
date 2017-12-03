@@ -17,7 +17,8 @@
    });
 
 
-    document.getElementById("ok").onclick=function(e){
+    document.getElementById("map").onclick=function(e){
+        document.getElementById("crime").innerHTML = "chargement des données...";
         var lat = document.getElementById("lat").value;
         var lng = document.getElementById("long").value;
         var temp = document.getElementById("date").value
