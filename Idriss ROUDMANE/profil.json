@@ -1,0 +1,37 @@
+{
+    "Profil": {
+        "personne": {
+            "nom": "Roudmane",
+            "prenom": "idriss",
+            "datenaissance": "25/09/1994",
+            "adresse": {
+                "ville": "Montpellier",
+                "pays": "FRANCE"
+            },
+            "contact": {
+                "email": "roudmane@gmail.com",
+                "Telephone": "0669458247"
+            }
+        },
+        "collegues": {
+            "personne": [
+                {
+                    "nom": "Samreth>",
+                    "prenom": "Darren"
+                },
+                {
+                    "nom": "Niaré",
+                    "prenom": "Seydou"
+                },
+                {
+                    "nom": "Cherel",
+                    "prenom": "Julien"
+                }
+                {
+                    "nom": "Elazri",
+                    "prenom": "Yassine"
+                }
+            ]
+        }
+    }
+}
