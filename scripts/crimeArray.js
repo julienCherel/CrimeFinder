@@ -44,7 +44,7 @@ function crimeArray(lat, lng, date){
                 }
                 for (var i = 0; i < crimeArray.length; i++) {
 
-                    tmp+='<a href="#">'+crimeArray[i]+'</a>';
+                    tmp+='<a href="#">'+crimeArray[i]+'</a><br />';
                 }
                 crimeArray.push(["Total",total]);
                 console.log(crimeArray);
