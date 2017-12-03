@@ -1,0 +1,31 @@
+{
+    "profil": {
+        "personne": {
+            "nom": "Samreth",
+            "prenom": "Darren",
+            "datenaissance": "28/01/1996",
+            "adresse": {
+                "ville": "Saint-Georges-d'Orques",
+                "pays": "France"
+            },
+            "contact": {
+                "email": "darren.samreth@etu.univ-montp3.fr",
+                "telephone": "06 18 97 88 01"
+            }
+        },
+        "collegues": [
+            {
+                "nom": "Cherel",
+                "prenom": "Julien"
+            },
+            {
+                "nom": "Niaré",
+                "prenom": "Seydou"
+            },
+            {
+                "nom": "Elazri",
+                "prenom": "Yassine"
+            } 
+        ]
+    }
+}

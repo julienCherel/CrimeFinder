@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Swipe between layers</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js'></script>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+
+<style>
+  body { margin:0; padding:0; }
+  #map { position:absolute; top:0; bottom:0; width:50%; }
+  #data { margin-left: 50% }
+</style>
+
+</head>
+
+<body>
+    <div id='map'></div>
+    <div id="data">
+    	Latitude : <input id ="lat" type="text" disabled="true">
+    	Longitude : <input id="long" type="text" disabled="true"><br><br>
+
+    	Date : <input type="month" id="date" min="2014-10" max="2017-09">
+
+		<div><p id="crime"></p></div>
+		<div id="liste_id"></div>
+    </div>
+    
+    <script src=scripts/mapics.js></script>
+    <script src="scripts/crimeArray.js"></script>
+ 
+</body>
+</html>

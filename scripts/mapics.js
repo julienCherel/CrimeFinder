@@ -7,8 +7,22 @@
 
     map.setView([54.5,-3], 6);
 
-    map.on('dblclick', function(e){
-         var marker = new L.marker([54.6357, -6.48193]);
-         marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup(); //dans bindPopup mettre le texte de l'infoBulle en html
-         marker.addTo(map);
-    });
+    map.on('click', function(e){
+        if (typeof(marker)!='undefined'){
+            map.removeLayer(marker);
+        }
+        document.getElementById("lat").value=e.latlng.lat;
+        document.getElementById("long").value=e.latlng.lng;
+        marker = new L.marker(e.latlng).addTo(map);        
+   });
+
+
+    document.getElementById("map").onclick=function(e){
+        document.getElementById("crime").innerHTML = "chargement des données...";
+        var lat = document.getElementById("lat").value;
+        var lng = document.getElementById("long").value;
+        var temp = document.getElementById("date").value
+        var t = temp.split("-");
+        var date = t[0]+"-"+t[1];
+         crimeArray(lat,lng,date);     
+   };
