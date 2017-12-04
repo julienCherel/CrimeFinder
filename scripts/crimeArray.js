@@ -43,8 +43,13 @@ function crimeArray(lat, lng, date){
                     crimeArray.push([categories[c][1],count]);
                 }
                 for (var i = 0; i < crimeArray.length; i++) {
-
-                    tmp+='<a href="#">'+crimeArray[i]+'</a><br />';
+                    tmp+='<h5 class="panel-title">';
+                    tmp+='<a data-toggle="collapse" '+
+                    'class="list-group-item d-flex justify-content-between align-items-center" '+
+                     'href="#category">'+
+                    crimeArray[i][0]+'<span class="badge badge-primary badge-pill">'+
+                    crimeArray[i][1]+'</span></a>';
+                    tmp+='</h5>';
                 }
                 crimeArray.push(["Total",total]);
                 console.log(crimeArray);

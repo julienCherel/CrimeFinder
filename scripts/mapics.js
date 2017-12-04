@@ -26,3 +26,8 @@
         var date = t[0]+"-"+t[1];
          crimeArray(lat,lng,date);     
    };
+
+   $('#liste_id li').on('click', function (e) {
+     e.preventDefault()
+     alert(e)
+    });
