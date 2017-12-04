@@ -58,19 +58,31 @@
       <div class="row">
 
         <!-- Map -->
-        <div class="col-lg-8">
+        <div class="col-sm-7">
+
           <div class = "card mt-4" id='map'></div>
-          <div><p>bofbgbfgbfvbv fcvfc</p></div>
+
         </div>
+        
         <!-- Map -->
 
-        <div class="col-lg-3">
+        <div class="col-sm-5">
           <!-- longitude et latitude -->
-            Latitude : <input class="form-control" id ="lat" type="text" disabled="true">
-            Longitude : <input class="form-control" id="long" type="text" disabled="true">
-
-            Date : <input class="form-control" type="month" id="date" min="2014-10" max="2017-09">
-            <h5>Les catégories de crimes</h5>
+          <div class="row">
+            <div class="form-group col-sm-5">
+              <label class="control-label" for="lat">Latitude :</label>
+              <input class="form-control" id ="lat" type="text" disabled="true">
+            </div>
+            <div class="form-group col-sm-5">
+              <label for="long">Longitude :</label>
+              <input class="form-control" id="long" type="text" disabled="true">
+            </div>
+            <div class="form-group col-sm-5">
+              <label for="date">Date :</label>
+              <input class="form-control" type="month" id="date" min="2014-10" max="2017-09">
+            </div>
+          </div>
+            <h3 class="text-primary">Les catégories de crimes</h3>
             <div><p id="crime"></p></div>
 
             <div class="list-group" id="liste_id"></div>

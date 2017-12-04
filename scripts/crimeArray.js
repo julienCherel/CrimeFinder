@@ -46,7 +46,7 @@ function crimeArray(lat, lng, date){
                     tmp+='<h5 class="panel-title">';
                     tmp+='<a data-toggle="collapse" '+
                     'class="list-group-item d-flex justify-content-between align-items-center" '+
-                     'href="#category">'+
+                     'href="#liste_id">'+
                     crimeArray[i][0]+'<span class="badge badge-primary badge-pill">'+
                     crimeArray[i][1]+'</span></a>';
                     tmp+='</h5>';

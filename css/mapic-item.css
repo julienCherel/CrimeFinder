@@ -18,26 +18,31 @@ body,html {
 }
 
 .form-control{
-	margin-left: 10px;	
+	margin-left: 10px;
+	padding: 5px;
+	margin: 5px;	
 }
 
 #liste_id{
 	margin-left: 10px;
 	position: relative;
   	overflow:auto;
-    height:300px;
+    height:280px;
 }
 
 #map { 
-	position:absolute; 
-	top:0; bottom:0; 
+	position:relative; 
+	top:0; 
 	width:100%; 
 	height: 450px;
-
-
+	display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
+
 @media (min-width: 992px,min-height: 992px) {
   body {
     padding-top: 56px;
   }
+
 }
