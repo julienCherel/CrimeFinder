@@ -72,6 +72,7 @@ function crimeArray(lat, lng, date){
                 //console.log(crimeArray);
                 document.getElementById("crime").innerHTML = "";
                 if(total == 0){
+                    document.getElementById("crime").setAttribute("class","text-danger");
                     document.getElementById("crime").innerHTML = "Données non disponible pour cette date et cordonnées";
                     list.innerHTML = "";
                 } else{
@@ -81,6 +82,7 @@ function crimeArray(lat, lng, date){
         } else {
             console.log(date)
             if (date == '-undefined') {
+                document.getElementById("crime").setAttribute("class","text-danger");
                 document.getElementById("crime").innerHTML = "Veuillez selectionner une date";
             }
             throw new Error("Données non disponible pour cette date et cordonnées");

@@ -4,7 +4,8 @@
     id='satellite-streets-v9'
     token='pk.eyJ1IjoianVsaWVuMTAxMCIsImEiOiJjajk5cHpkdjAxMHA1MzNuMm12aWd1OW5nIn0.DzPgmtGDquEzt1IyVb7yJQ'
     L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/'+id+'/tiles/{z}/{x}/{y}?access_token='+token).addTo(map);
-
+    
+ 
     map.setView([54.5,-3], 6);
 
     map.on('click', function(e){
@@ -16,7 +17,6 @@
         marker = new L.marker(e.latlng).addTo(map);        
    });
 
-
     document.getElementById("map").onclick=function(e){
         document.getElementById("crime").innerHTML = "chargement des données...";
         var lat = document.getElementById("lat").value;
@@ -27,7 +27,4 @@
          crimeArray(lat,lng,date);     
    };
 
-   $('#liste_id li').on('click', function (e) {
-     e.preventDefault()
-     alert(e)
-    });
+  
