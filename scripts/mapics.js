@@ -18,13 +18,17 @@
    });
 
     document.getElementById("map").onclick=function(e){
+        document.getElementById("cat").innerHTML="Les catégories de crimes";
         document.getElementById("crime").innerHTML = "chargement des données...";
         var lat = document.getElementById("lat").value;
         var lng = document.getElementById("long").value;
         var temp = document.getElementById("date").value
         var t = temp.split("-");
         var date = t[0]+"-"+t[1];
-         crimeArray(lat,lng,date);     
+        crimeArray(lat,lng,date);     
    };
 
+   function reload_page(){
+        location.reload();
+   }
   

@@ -83,7 +83,9 @@ function crimeArray(lat, lng, date){
             console.log(date)
             if (date == '-undefined') {
                 document.getElementById("crime").setAttribute("class","text-danger");
-                document.getElementById("crime").innerHTML = "Veuillez selectionner une date";
+                document.getElementById("date").setAttribute("class","form-control is-invalid");
+                document.getElementById("crime").innerHTML = "Veuillez selectionner une date et cliquer sur le map";
+
             }
             throw new Error("Données non disponible pour cette date et cordonnées");
         }
@@ -101,4 +103,9 @@ function crimeArray(lat, lng, date){
             )
         }
         )
-}
+    }
+
+    function dateUpdate(){
+        document.getElementById("date").setAttribute("class","form-control");
+
+    }
