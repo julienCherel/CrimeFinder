@@ -1,0 +1,36 @@
+{
+    "profil" : {
+        "personne": {
+            "nom": "NIARE",
+            "prenom": "Seydou",
+            "datenaissance": "24/09/1989",
+            "adresse": {
+                "ville": "Bamako",
+                "pays": "Mali"
+            },
+            "contact": {
+                "email": "seydouniar@gmail.com",
+                "Telephone": "0752825307"
+            }
+        },
+        "collegues": [
+            {
+                "nom": "SAMRETH",
+                "prenom": "Darren"
+            },
+            {
+                "nom": "CHEREL",
+                "prenom": "Seydou"
+            },
+            {
+                "nom": "ELAZRI",
+                "prenom": "Yassine"
+            },
+            {
+                "nom": "ROUDMANE",
+                "prenom": "Idriss"
+            }
+
+        ]
+    }
+}
