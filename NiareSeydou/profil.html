@@ -1,17 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Profil</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>NIARE Seydou</title>
+	<style type="text/css">
+		.profile-image {
+			    padding-top: 10px;
+			    padding-bottom: 10px;
+			    width: 100%;
+			    height: 100%;
+			}
+	</style>
 </head>
 
 <body>
-	<ol>
-		<li><strong>Nom : </strong></li>
-		<li><strong>Prenom : </strong></li>
-		<li><strong>Date de naissance : </strong></li>
-		<li><strong>adresse mail : </strong></li>
-		<li><strong>Liste des amis : </strong></li>
-	</ol>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">NIARE Seydou</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Home</a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="row">
+				<div class="col-sm-3">
+					<img class="profile-image img-thumbnail" src="https://s8.postimg.org/dk68eri45/Pesso.png">
+				</div>
+				<div class="col-sm-3">
+					<h4>Nom</h4>
+					<p class="text-center">NIARE</p>
+					<h4>Prénom</h4>
+					<p class="text-center">Seydou</p>
+				</div>
+				
+			</div>
+			<h1 class="text-primary">Information personnel</h1>
+			<h3>Date de naissance</h3>
+			<p class="text-center">24/09/1989</p>
+			<h3>Adresse</h3>
+			<p class="text-center">Bamako, Mali</p>
+			<h3>Email</h3>
+			<p class="text-center">seydouniar@gmail.com</p>
+			<h3>Portable</h3>
+			<p class="text-center">0752825307</p>
+			<br><br>
+		</div>
+		<div class="col-sm-6">
+			<h1 class="text-primary">Mes collègues</h1>
+			<table class="table table-striped">
+			    <thead>
+			      <tr>
+			        <th>Nom</th>
+			        <th>Prenom</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			      <tr>
+			        <td>Samreth</td>
+			        <td>Darren</td>
+			      </tr>
+			      <tr>
+			        <td>Cherel</td>
+			        <td>Julien</td>
+			      </tr>
+			      <tr>
+			        <td>Elazri</td>
+			        <td>Yassine</td>
+			      </tr>
+			      <tr>
+			        <td>Roudmane</td>
+			        <td>Idriss</td>
+			      </tr>
+			    </tbody>
+			  </table>
+		</div>
+	</div>
+	</div>
 </body>
 
 </html>

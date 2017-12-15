@@ -1,3 +1,37 @@
-XML/RDF
-FOAF
-SIOC
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<profil>
+<personne>
+    <nom>NIARE</nom>
+    <prenom>Seydou</prenom>
+    <datenaissance>24/09/1989</datenaissance>
+    <adresse>
+        <ville>Bamako</ville>
+        <pays>Mali</pays>
+    </adresse>
+    <contact>
+        <email>seydouniar@gmail.com</email>
+        <telephone>0752825307</telephone>
+    </contact>
+</personne>
+
+<collegues>
+    <personne>
+        <nom>CHEREL></nom>
+        <prenom>Julien</prenom>
+    </personne>
+    <personne>
+        <nom>SAMRETH</nom>
+        <prenom>Darren</prenom>
+    </personne>
+    <personne>
+        <nom>ELAZRI</nom>
+        <prenom>Yassine</prenom>
+    </personne>
+    <personne>
+        <nom>ROUDMANE</nom>
+        <prenom>Idriss</prenom>
+    </personne>
+</collegues>
+</profil>
+

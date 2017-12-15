@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<Profil>
+<personne>
+    <nom>ROUDMANE</nom>
+    <prenom>Idriss</prenom>
+    <datenaissance>25/09/1994</datenaissance>
+    <adresse>
+        <ville>Montpellier</ville>
+        <pays>FRANCE</pays>
+    </adresse>
+    <contact>
+        <email>roudmane@gmail.com</email>
+        <Telephone>0669458247</Telephone>
+    </contact>
+</personne>
+
+<collègues>
+    <personne>
+        <nom>Samreth></nom>
+        <prenom>Darren</prenom>
+    </personne>
+    <personne>
+        <nom>Niaré</nom>
+        <prenom>Seydou</prenom>
+    </personne>
+    <personne>
+        <nom>Cherel</nom>
+        <prenom>Julien</prenom>
+    </personne>
+    <personne>
+        <nom>ELAZRI</nom>
+        <prenom>Idriss</prenom>
+    </personne>
+</collègues>
+</Profil>
+
