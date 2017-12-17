@@ -14,7 +14,7 @@ https://seydouniar.github.io/crimefinder/
 
 > 1 - Choisir une date 
 
-> 2 - Clique map
+> 2 - Clique sur le map
 
 > 3 - S'il existe des données la liste des catégories de crimes s'affiche
 
